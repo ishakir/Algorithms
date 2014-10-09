@@ -18,8 +18,6 @@ public class ResizingArrayQueue<Item> implements Queue<Item> {
 			resize(items.length * 2);
 		}
 		items[tail++] = item;
-		System.out.println("Added item "+item);
-		printInfo();
 	}
 
 	@Override
@@ -28,7 +26,6 @@ public class ResizingArrayQueue<Item> implements Queue<Item> {
 		Item item = items[head];
 		items[head] = null;
 		head = (head + 1) % items.length;
-		printInfo();
 		if(size() < items.length / 4) {
 			resize(items.length / 2);
 		}
@@ -53,39 +50,6 @@ public class ResizingArrayQueue<Item> implements Queue<Item> {
 		tail = tail - head;
 		head = 0;
 		items = tempArray;
-	}
-	
-	private void printInfo() {
-		System.out.println("Head is "+head);
-		System.out.println("Tail is "+tail);
-		System.out.println("items is");
-		for(int i = 0; i < items.length; i++) {
-			System.out.println(i + ": " + items[i]);
-		}
-	}
-	
-	public static void main(String[] args) {
-		Queue<String> stringQueue = new ResizingArrayQueue<String>(1);
-		
-		stringQueue.enqueue("Hello");
-		stringQueue.enqueue("My");
-		stringQueue.enqueue("Name");
-		stringQueue.enqueue("Is");
-		stringQueue.enqueue("Imran");
-		
-		System.out.println(stringQueue.dequeue());
-		System.out.println(stringQueue.dequeue());
-		System.out.println(stringQueue.dequeue());
-		
-		for(int i = 0; i < 6; i++) {
-			stringQueue.enqueue("Stuff");
-		}
-		
-		for(int i = 0; i < 8; i++) {
-			stringQueue.dequeue();
-		}
-		
-		System.out.println(stringQueue.isEmpty());
 	}
 
 }
