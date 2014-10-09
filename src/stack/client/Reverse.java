@@ -5,7 +5,7 @@ import io.StdIn;
 
 public class Reverse {
 	public static void main(String[] args) {
-		DynamicCapacityStack<Integer> stack = new DynamicCapacityStack<>(1);
+		DynamicCapacityStack<Integer> stack = new DynamicCapacityStack<Integer>(1);
 		
 		while(!StdIn.isEmpty()) {
 			stack.push(StdIn.readInt());
