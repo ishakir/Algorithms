@@ -65,24 +65,5 @@ public class LinkedListStequeue<Item> implements Stequeue<Item> {
 		}
 		return counter;
 	}
-	
-	public void printInfo() {
-		System.out.println("----------------");
-		System.out.println("First: "+first);
-		System.out.println("Last: "+last);
-	}
-	
-	public static void main(String[] args) {
-		LinkedListStequeue<String> stequeue = new LinkedListStequeue<String>();
-		stequeue.printInfo();
-		stequeue.push("Hello");
-		stequeue.printInfo();
-		stequeue.push("String");
-		stequeue.printInfo();
-		stequeue.enqueue("Illin");
-		stequeue.printInfo();
-		System.out.println(stequeue.pop());
-		stequeue.printInfo();
-	}
 
 }
