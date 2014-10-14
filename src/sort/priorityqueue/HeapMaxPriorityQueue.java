@@ -14,6 +14,7 @@ public class HeapMaxPriorityQueue<Key extends Comparable<Key>> implements
 	public void insert(Key v) {
 		pq[++N] = v;
 		swim(N);
+		show();
 	}
 
 	@Override
@@ -68,33 +69,27 @@ public class HeapMaxPriorityQueue<Key extends Comparable<Key>> implements
 		pq[j] = t;
 	}
 	
+	private void show() {
+		for(int i = 0; i < pq.length; i++) {
+			System.out.print(pq[i]+" ");
+		}
+		System.out.println();
+	}
+	
 	public static void main(String[] args) {
 		MaxPriorityQueue<Character> priorityQueue = new HeapMaxPriorityQueue<Character>(20);
-		priorityQueue.insert('P');
-		priorityQueue.insert('R');
-		priorityQueue.insert('I');
-		priorityQueue.insert('O');
-		System.out.print(priorityQueue.delMax());
-		priorityQueue.insert('R');
-		System.out.print(priorityQueue.delMax());
-		System.out.print(priorityQueue.delMax());
-		priorityQueue.insert('I');
-		System.out.print(priorityQueue.delMax());
-		priorityQueue.insert('T');
-		System.out.print(priorityQueue.delMax());
+		priorityQueue.insert('E');
+		priorityQueue.insert('A');
+		priorityQueue.insert('S');
 		priorityQueue.insert('Y');
-		System.out.print(priorityQueue.delMax());
-		System.out.print(priorityQueue.delMax());
-		System.out.print(priorityQueue.delMax());
 		priorityQueue.insert('Q');
 		priorityQueue.insert('U');
 		priorityQueue.insert('E');
-		System.out.print(priorityQueue.delMax());
-		System.out.print(priorityQueue.delMax());
-		System.out.print(priorityQueue.delMax());
-		priorityQueue.insert('U');
-		System.out.print(priorityQueue.delMax());
-		priorityQueue.insert('E');
+		priorityQueue.insert('S');
+		priorityQueue.insert('T');
+		priorityQueue.insert('I');
+		priorityQueue.insert('O');
+		priorityQueue.insert('N');
 	}
 
 }
