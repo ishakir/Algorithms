@@ -12,7 +12,6 @@ public class Insertion<Item extends Comparable<Item>> extends Sort<Item> {
 		for(int i = 0; i < N; i++) {
 			for(int j = i; j > 0 && less(a[j], a[j - 1]); j--) {
 				exch(j, j - 1);
-				show();
 			}
 		}
 		return a;

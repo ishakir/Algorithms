@@ -25,7 +25,10 @@ public class Heap<Item extends Comparable<Item>> extends Sort<Item> {
 	public static void main(String[] args) {
 		Integer[] intArray = {9,2,5,3,8,1,7,4,6};
 		Sort<Integer> sort = new Heap<Integer>(intArray);
-		sort.sort();
+		Integer[] sorted = sort.sort();
+		for(int i = 0; i < sorted.length; i++) {
+			System.out.print(sorted[i]);
+		}
 	}
 	
 }

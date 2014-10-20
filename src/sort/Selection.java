@@ -18,7 +18,6 @@ public class Selection<Item extends Comparable<Item>> extends Sort<Item> {
 				}
 			}
 			exch(i, min);
-			show();
 		}
 		return a;
 	}
