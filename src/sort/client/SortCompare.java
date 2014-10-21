@@ -4,6 +4,8 @@ import java.util.Random;
 
 import misc.Stopwatch;
 import sort.Insertion;
+import sort.Merge;
+import sort.MergeBU;
 import sort.Selection;
 import sort.Shell;
 
@@ -14,6 +16,8 @@ public class SortCompare {
 		if(alg.equals("Insertion")) new Insertion<Item>(a).sort();
 		if(alg.equals("Selection")) new Selection<Item>(a).sort();
 		if(alg.equals("Shell"))     new Shell<Item>(a).sort();
+		if(alg.equals("Merge"))     new Merge<Item>(a).sort();
+		if(alg.equals("MergeBU"))   new MergeBU<Item>(a).sort();
 		return timer.elapsedTime();
 	}
 	
@@ -33,14 +37,18 @@ public class SortCompare {
 	}
 	
 	public static void main(String[] args) {
-		int arraySize = 10000;
+		int arraySize = 100000;
 		int noOfTimes = 100;
-		double selectionTime = timeRandomInput("Selection", arraySize, noOfTimes);
-		double insertionTime = timeRandomInput("Insertion", arraySize, noOfTimes);
+		//double selectionTime = timeRandomInput("Selection", arraySize, noOfTimes);
+		//double insertionTime = timeRandomInput("Insertion", arraySize, noOfTimes);
 		double shellTime = timeRandomInput("Shell", arraySize, noOfTimes);
-		System.out.println("Selection: "+selectionTime);
-		System.out.println("Insertion: "+insertionTime);
+		double mergeTime = timeRandomInput("Merge", arraySize, noOfTimes);
+		double mergeBUTime = timeRandomInput("MergeBU", arraySize, noOfTimes);
+		//System.out.println("Selection: "+selectionTime);
+		//System.out.println("Insertion: "+insertionTime);
 		System.out.println("Shell: "+shellTime);
+		System.out.println("Merge: "+mergeTime);
+		System.out.println("MergeBU: "+mergeBUTime);
 	}
 	
 }
