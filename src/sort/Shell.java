@@ -2,22 +2,42 @@ package sort;
 
 public class Shell<Item extends Comparable<Item>> extends Sort<Item> {
 
+	private int[] incrementSequence;
+	
 	public Shell(Item[] a) {
 		super(a);
+		
+		// Calculate some increment sequence up front
+		int h = 1;
+		int counter = 1;
+		while(h < a.length / 3) {
+			h = 3*h + 1;
+			counter++;
+		}
+		incrementSequence = new int[counter];
+		int counter2 = 0;
+		while(h >= 1) {
+			incrementSequence[counter2] = h;
+			h = h / 3;
+			counter2++;
+		}
+	}
+	
+	public Shell(Item[] a, int[] incrementSequence) {
+		super(a);
+		this.incrementSequence = incrementSequence;
 	}
 
 	@Override
 	public Item[] sort() {
 		int N = a.length;
-		int h = 1;
-		while(h < N/3) h = 3*h + 1;
-		while(h >= 1) { // h-sort the array
+		for(int k = 0; k < incrementSequence.length; k++) { // h-sort the array
+			int h = incrementSequence[k];
 			for(int i = h; i < N; i++) {
 				for(int j = i; j >= h && less(a[j], a[j-h]); j -= h) {
 					exch(j, j - h);
 				}
 			}
-			h = h / 3;
 		}
 		return a;
 	}
