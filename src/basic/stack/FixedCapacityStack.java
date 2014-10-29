@@ -1,6 +1,8 @@
 package basic.stack;
 
-public class FixedCapacityStack<Item> {
+import java.util.Iterator;
+
+public class FixedCapacityStack<Item> implements Stack<Item> {
 	
 	private Item[] a;
 	private int N;
@@ -24,6 +26,17 @@ public class FixedCapacityStack<Item> {
 	
 	public Item peek() {
 		return a[N - 1];
+	}
+	
+	public Iterator<Item> iterator() {
+		return new ReverseArrayIterator();
+	}
+	
+	private class ReverseArrayIterator implements Iterator<Item> {
+		private int i = N;
+		public boolean hasNext() { return i > 0; }
+		public Item next() { return a[--i]; }
+		public void remove() {}
 	}
 	
 }

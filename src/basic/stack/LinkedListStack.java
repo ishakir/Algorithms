@@ -1,5 +1,8 @@
 package basic.stack;
 
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 public class LinkedListStack<Item> implements Stack<Item> {
 
 	private Node first;
@@ -26,6 +29,21 @@ public class LinkedListStack<Item> implements Stack<Item> {
 		first = first.next;
 		N--;
 		return item;
+	}
+	
+	public Iterator<Item> iterator() { return new ListIterator(); }
+	
+	private class ListIterator implements Iterator<Item> {
+		private Node current = first;
+		public boolean hasNext() { return current != null; }
+		public void remove() { throw new UnsupportedOperationException(); }
+		
+		public Item next() {
+			if(!hasNext()) throw new NoSuchElementException();
+			Item item = current.item;
+			current = current.next;
+			return item;
+		}
 	}
 	
 }

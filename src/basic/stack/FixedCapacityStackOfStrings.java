@@ -1,5 +1,7 @@
 package basic.stack;
 
+import java.util.Iterator;
+
 import misc.io.StdIn;
 import misc.io.StdOut;
 
@@ -37,6 +39,17 @@ public class FixedCapacityStackOfStrings implements Stack<String> {
 		}
 		
 		StdOut.println("(" + s.size() + " left on stack)");
+	}
+	
+	public Iterator<String> iterator() {
+		return new ReverseArrayIterator();
+	}
+	
+	private class ReverseArrayIterator implements Iterator<String> {
+		private int i = N;
+		public boolean hasNext() { return i > 0; }
+		public String next() { return a[--i]; }
+		public void remove() {}
 	}
 	
 }
