@@ -14,7 +14,7 @@ public class RemoveKthNodeTest {
 		Node<String> middle = new Node<String>("sup", last);
 		Node<String> first = new Node<String>("howdy", middle);
 		
-		RemoveKthNode<String> remover = new RemoveKthNode<>(first);
+		RemoveKthNode<String> remover = new RemoveKthNode<String>(first);
 		Node<String> removed = remover.removeKth(1);
 		
 		Node<String> next = removed;
@@ -32,7 +32,7 @@ public class RemoveKthNodeTest {
 		Node<String> middle = new Node<String>("sup", last);
 		Node<String> first = new Node<String>("howdy", middle);
 		
-		RemoveKthNode<String> remover = new RemoveKthNode<>(first);
+		RemoveKthNode<String> remover = new RemoveKthNode<String>(first);
 		Node<String> removed = remover.removeKth(2);
 		
 		Node<String> next = removed;
@@ -50,7 +50,7 @@ public class RemoveKthNodeTest {
 		Node<String> middle = new Node<String>("sup", last);
 		Node<String> first = new Node<String>("howdy", middle);
 		
-		RemoveKthNode<String> remover = new RemoveKthNode<>(first);
+		RemoveKthNode<String> remover = new RemoveKthNode<String>(first);
 		Node<String> removed = remover.removeKth(3);
 		
 		Node<String> next = removed;
