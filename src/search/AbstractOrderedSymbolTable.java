@@ -15,7 +15,7 @@ public abstract class AbstractOrderedSymbolTable<Key extends Comparable<Key>, Va
 	}
 	
 	@Override
-	int size(Key lo, Key hi) {
+	public int size(Key lo, Key hi) {
 		if(hi.compareTo(lo) < 0) {
 			return 0;
 		} else if(contains(hi)) {
