@@ -23,6 +23,17 @@ public class LinkedListBag<Item> implements Bag<Item> {
 
 	@Override public boolean isEmpty() { return first == null; }
 	@Override public int size() { return N; }
+	
+	// contains is O(n)
+	@Override
+	public boolean contains(Item item) {
+		for(Item stored : this) {
+			if(stored.equals(item)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	@Override
 	public Iterator<Item> iterator() {
