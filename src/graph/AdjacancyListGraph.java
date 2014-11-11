@@ -17,6 +17,22 @@ public class AdjacancyListGraph extends AbstractGraph {
 		}
 	}
 	
+	// Copy constructor, complexity potentially (definitely!) too high
+	// Mostly because Bag.contains is O(n), maybe HashSet is a better data structure?
+	public AdjacancyListGraph(Graph G) {
+		this.V = G.V(); this.E = G.E();
+		adj = (Bag<Integer>[]) new Bag[V];
+		// Double loop, but always ends up being E operations
+		for(int v= 0; v < V; v++) {
+			adj[v] = new LinkedListBag<Integer>();
+			for(int a : G.adj(v)) {
+				if(!adj[v].contains(a)) {
+					addEdge(v, a);
+				}
+			}
+		}
+	}
+	
 	@Override
 	public int V() {
 		return V;
@@ -32,6 +48,11 @@ public class AdjacancyListGraph extends AbstractGraph {
 		adj[v].add(w);
 		adj[w].add(v);
 		E++;
+	}
+	
+	@Override
+	public boolean hasEdge(int v, int w) {
+		return adj[v].contains(w);
 	}
 
 	@Override
