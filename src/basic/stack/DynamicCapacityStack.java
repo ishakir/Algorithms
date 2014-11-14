@@ -34,6 +34,10 @@ public class DynamicCapacityStack<Item> implements Stack<Item>, Iterable<Item> {
 		return item;
 	}
 	
+	public Item peek() {
+		return a[N - 1];
+	}
+	
 	private void resize(int max) {
 		System.out.println("Resizing stack to " + max);
 		Item[] temp = (Item[]) new Object[max];

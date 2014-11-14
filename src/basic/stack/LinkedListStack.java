@@ -31,6 +31,10 @@ public class LinkedListStack<Item> implements Stack<Item> {
 		return item;
 	}
 	
+	public Item peek() {
+		return first.item;
+	}
+	
 	public Iterator<Item> iterator() { return new ListIterator(); }
 	
 	private class ListIterator implements Iterator<Item> {

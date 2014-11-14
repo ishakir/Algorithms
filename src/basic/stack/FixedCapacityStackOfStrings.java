@@ -14,6 +14,7 @@ public class FixedCapacityStackOfStrings implements Stack<String> {
 		a = new String[cap];
 	}
 	
+	public boolean isFull() { return N == a.length; }
 	public boolean isEmpty() { return N == 0; }
 	public int size() {return N;}
 	
@@ -23,6 +24,10 @@ public class FixedCapacityStackOfStrings implements Stack<String> {
 	
 	public String pop() {
 		return a[--N];
+	}
+	
+	public String peek() {
+		return a[N - 1];
 	}
 	
 	public static void main(String[] args) {
@@ -39,6 +44,20 @@ public class FixedCapacityStackOfStrings implements Stack<String> {
 		}
 		
 		StdOut.println("(" + s.size() + " left on stack)");
+	}
+	
+	public Stack<String> copy() {
+		Stack<String> intermediate = new FixedCapacityStackOfStrings(a.length);
+		for(String s: this) {
+			intermediate.push(s);
+		}
+		
+		Stack<String> copyStack = new FixedCapacityStackOfStrings(a.length);
+		for(String s: intermediate) {
+			copyStack.push(s);
+		}
+		
+		return copyStack;
 	}
 	
 	public Iterator<String> iterator() {
