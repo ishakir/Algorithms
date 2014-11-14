@@ -1,5 +1,7 @@
 package basic.queue;
 
+import java.util.Iterator;
+
 public class ResizingArrayQueue<Item> implements Queue<Item> {
 
 	private Item[] items;
@@ -50,6 +52,18 @@ public class ResizingArrayQueue<Item> implements Queue<Item> {
 		tail = tail - head;
 		head = 0;
 		items = tempArray;
+	}
+	
+	public Iterator<Item> iterator() {
+		return new ReverseArrayIterator();
+	}
+	
+	private class ReverseArrayIterator implements Iterator<Item> {
+		private final int initialSize = size();
+		private int i = initialSize;
+		public boolean hasNext() { return i < initialSize; }
+		public Item next() { return items[i++]; }
+		public void remove() {}
 	}
 
 }
