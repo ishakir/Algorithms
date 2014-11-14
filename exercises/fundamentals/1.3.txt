@@ -1,0 +1,68 @@
+1.  Implemented in basic.stack.FixedCapacityStackOfStrings and basic.stack.FixedCapacityStack
+2.  was best times of the was the it
+3.  b, f, g
+4.  Implemented in basic.stack.client.Parenthesis
+5.  Prints the binary representation, takes the last bit (N % 2), shifts all right (N/2) and repeats, the
+    stack makes sure they come out in the correct order as they are computed in reverse order
+6.  Reverses the order of the elements in the queue
+7.  Implemented in basic.stack.FixedCapacityStack, basic.stack.FixedCapacityStackOfStrings,
+    basic.stack.LinkedListStack and basic.DynamicCapacityStack
+8.  Assume size starts at 1 for most interest!
+	Push "it", Size: 2, Contents: it, null
+	Push "was", Size: 4, Contents: it, was, null, null
+	Pop "was", Size: 2, Contents: it, null
+	Push "the", Size: 4, Contents: it, the, null, null
+	Push "best", Size: 4, Contents: it, the, best, null
+	Pop "best", Size: 4, Contents: it, the, null, null
+	Push "of", Size: 4, Contents: it, the, of, null
+	Push "times", Size: 8, Contents: it, the, of, times, null, null, null, null
+	Pop "times", Size: 8, Contents: it, the, of, null, null, null, null, null
+	Pop "of", Size: 4, Contents: it, the, null, null
+	Pop "the", Size: 2, Contents: it, null
+	Push "it", Size: 4, Contents: it, it, null, null
+	Push "was", Size: 4, Contents: it, it, was, null
+	Pop "was", Size: 4, Contents: it, it, null, null
+	Push "the", Size: 4, Contents: it, it, the, null
+	Pop "the", Size: 4, Contents: it, it, null, null
+9. 	Implemented in basic.stack.client.PostfixToInfix
+10. Implemented in basic.queue.client.InfixToPostfix
+11. Implemented in basic.stack.client.EvaluatePostfix
+12. Implemented in basic.stack.FixedCapacityStackOfStrings
+13. b, c, d (They must come out in the same order they went in)
+14. Implemented generically in basic.queue.ResizingArrayQueue
+15. Implemented in basic.queue.client.GetKthElement
+16. Not done
+17. Not done
+18. Deletes the node after x
+19. Implemented in linkedlist.client.RemoveLastNode
+20. Implemented in linkedlist.client.RemoveKthNode
+21. Implemented in linkedlist.client.Find
+22. Inserts t into the list after x
+23. x.next is set to t, so we create an infinite linked list x->t->t->t->t_.etc...
+24. Implemented in linkedlist.client.RemoveAfter
+25. Implemented in linkedlist.client.InsertAfter
+26. Implemented in linkedlist.client.Remove
+27. Implemented in linkedlist.client.FindLargest
+28. Implemented in linkedlist.client.FindLargest
+29. Implemented in basic.queue.CircularLinkedListQueue
+30. Not done
+31. Not done
+32. Implemented in basic.steque.Steque and basic.steque.LinkedListSteque
+33. Not Done - Some implemented in basic.deque.Deque and basic.deque.DoublyLinkedListDeque resizing array
+34. Not done
+35. Not done
+36. Not done
+37. Not done
+38. Not done
+39. Not done
+40. Not done
+41. Not done
+42. Not done
+43. Not done
+44. Not done
+45. Not done
+46. Not done
+47. Not done
+48. Not done
+49. Not done
+50. Not done
