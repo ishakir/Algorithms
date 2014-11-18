@@ -28,6 +28,9 @@ public class LinkedListQueue<Item> implements Queue<Item> {
 	}
 	
 	public Item dequeue() {
+		if(first == null) {
+			return null;
+		}
 		Item item = first.item;
 		first = first.next;
 		if(isEmpty()) last = null;

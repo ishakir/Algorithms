@@ -29,7 +29,7 @@
 11. Implemented in basic.stack.client.EvaluatePostfix
 12. Implemented in basic.stack.FixedCapacityStackOfStrings
 13. b, c, d (They must come out in the same order they went in)
-14. Implemented generically in basic.queue.ResizingArrayQueue
+14. TODO - best way to do resizing - Implemented generically in basic.queue.ResizingArrayQueue
 15. Implemented in basic.queue.client.GetKthElement
 16. Not done
 17. Not done
@@ -45,11 +45,10 @@
 27. Implemented in linkedlist.client.FindLargest
 28. Implemented in linkedlist.client.FindLargest
 29. Implemented in basic.queue.CircularLinkedListQueue
-30. Not done
-31. Not done
+30. Implemented in linkedlist.client.Reverse
+31. Implemented in linkedlist.DoubleNode and linkedlist.client.DoubleNodeOperations
 32. Implemented in basic.steque.Steque and basic.steque.LinkedListSteque
-33. Not Done - Some implemented in basic.deque.Deque and basic.deque.DoublyLinkedListDeque resizing array
-34. Not done
+33. TODO - best way to do resizing - Implemented in basic.deque.Deque, basic.deque.DoublyLinkedListDeque and basic.deque.ResizingArrayDeque. Final one has a very interesting choice on how to implement resizing, not sure how good mine is
 35. Not done
 36. Not done
 37. Not done
