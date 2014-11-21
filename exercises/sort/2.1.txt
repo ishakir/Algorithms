@@ -1,0 +1,109 @@
+1.  E A S Y Q U E S T I O N
+	A E S Y Q U E S T I O N  (Swap A with E)
+	A E S Y Q U E S T I O N  (E doesn't swap with anything)
+	A E E Y Q U S S T I O N  (Swap S with E)
+	A E E I Q U S S T Y O N  (Swap Y with I)
+	A E E I N U S S T Y O Q  (Swap Q with N)
+	A E E I N O S S T Y U Q  (Swap U with O)
+	A E E I N O Q S T Y U S  (Swap S with Q)
+	A E E I N O Q S T Y U S  (S doesn't swap with anything)
+	A E E I N O Q S S Y U T  (Swap T with S)
+	A E E I N O Q S S T U Y  (Swap Y with T)
+	A E E I N O Q S S T U Y  (U doesn't swap with anything)
+2.  Maximum number of exchanges for a particular element: N - 1
+    Average number of exchanges involving an element 2(N - 1) / N ~= 2
+3.  An array that is in completely reversed order, for example: [5, 4, 3, 2, 1]
+4.  E A S Y Q U E S T I O N
+    A E S Y Q U E S T I O N (Move A to position 0)
+    A E S Y Q U E S T I O N (Leave S where it is)
+    A E S Y Q U E S T I O N (Leave Y where it is)
+    A E Q S Y U E S T I O N (Move Q to position 2)
+    A E Q S U Y E S T I O N (Move U to position 4)
+    A E E Q S U Y S T I O N (Move E to position 2)
+    A E E Q S S U Y T I O N (Move S to position 5)
+    A E E Q S S T U Y I O N (Move T to position 6)
+    A E E I Q S S T U Y O N (Move I to position 3)
+    A E E I O Q S S T U Y N (Move O to position 4)
+    A E E I N O Q S S T U Y (Move N to position 4) 
+5.  j > 0 always false when loop terminates: Implies item is always the smallest -> Array is reversed
+    less(a[j], a[j-1]) always false when loop terminates: Implies item is never the smallest, so the array initiall start with the smallest element
+6.  Insertion sort is faster, selection always needs to check all items in the row that haven't been sorted, whereas insertion will only do one compare for each element
+7.  Selection sort will run faster for a reverse array, the number of compares is the same for each but insertion sort does more exchanges
+8.  It's quadratic, consider the array [3,2,1] x N, the 1 elements need to travel 2(1 + N) distance and there are N/3 of them, so time is quadratic
+9.  input:   E A S Y S H E L L S O R T Q U E S T I O N
+
+    13-sort: E A S Y S H E L L S O R T Q U E S T I O N  (Don't swap E with Q)
+    		 E A S Y S H E L L S O R T Q U E S T I O N  (Don't swap A with U)
+    		 E A E Y S H E L L S O R T Q U S S T I O N  (Swap S with E)
+    		 E A E S S H E L L S O R T Q U S Y T I O N  (Swap Y with S)
+    		 E A E S S I E L L S O R T Q U S Y T H O N  (Swap H with I)
+    		 E A E S S I E L L S O R T Q U S Y T H O N  (Don't swap E with O)
+    		 E A E S S I E L L S O R T Q U S Y T H O N  (Don't swap L with N)
+    		 
+    4-sort:  E A E S S I E L L S O R T Q U S Y T H O N  (S doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (I doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (E doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (L doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (L doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (S doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (O doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (R doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (T doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (Q doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (U doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (S doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (Y doesn't move)
+             E A E S S I E L L S O R T Q U S Y T H O N  (T doesn't move)
+             E A E S S I E L L S H R T Q O S Y T U O N  (H makes 2 jumps left)
+             E A E S S I E L L S H O T Q O R Y T U S N  (O makes 2 jumps left)
+             E A E S S I E L L S H O N Q O R T T U S Y  (N makes 2 jumps left)
+             
+    1-sort:  A E E S S I E L L S H O N Q O R T T U S Y  (A makes 1 jump left)
+    		 A E E S S I E L L S H O N Q O R T T U S Y  (E doesn't move)
+    		 A E E S S I E L L S H O N Q O R T T U S Y  (E doesn't move)
+    		 A E E S S I E L L S H O N Q O R T T U S Y  (S doesn't move)
+    		 A E E S S I E L L S H O N Q O R T T U S Y  (S doesn't move)
+    		 A E E I S S E L L S H O N Q O R T T U S Y  (I makes 2 jumps left)
+    		 A E E E I S S L L S H O N Q O R T T U S Y  (E makes 3 jumps left)
+    		 A E E E I L S S L S H O N Q O R T T U S Y  (L makes 2 jumps left)
+    		 A E E E I L L S S S H O N Q O R T T U S Y  (L makes 2 jumps left)
+    		 A E E E H I L L S S S O N Q O R T T U S Y  (H makes 6 jumps left)
+    		 A E E E H I L L O S S S N Q O R T T U S Y  (O makes 3 jumps left)
+    		 A E E E H I L L N O S S S Q O R T T U S Y  (N makes 4 jumps left)
+    		 A E E E H I L L N O Q S S S O R T T U S Y  (Q makes 3 jumps left)
+    		 A E E E H I L L N O O Q S S S R T T U S Y  (O makes 4 jumps left)
+    		 A E E E H I L L N O O Q R S S S T T U S Y  (R makes 3 jumps left)
+    		 A E E E H I L L N O O Q R S S S T T U S Y  (T doesn't move)
+    		 A E E E H I L L N O O Q R S S S T T U S Y  (T doesn't move)
+    		 A E E E H I L L N O O Q R S S S T T U S Y  (U doesn't move)
+    		 A E E E H I L L N O O Q R S S S S T T U Y  (S makes 3 jumps left)
+    		 A E E E H I L L N O O Q R S S S S T T U Y  (Y doesn't move)
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
