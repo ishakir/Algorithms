@@ -1,0 +1,64 @@
+1.  Maximum No Edges, V vertices, no parallel edges: Everything has an edge to everything else V(V - 1)/2
+	Minimum No Edges, V vertices, no isolated vertex: If V Even: V /2
+													  If V Odd: (V - 1)/2 + 1
+2.  12 vertices, 16 edges
+	0:  5  2  6
+	1:  4  8  11
+	2:  5  6  0  3
+	3:  10 6  2
+	4:  1  8
+	5:  0  10 2
+	6:  2  3  0
+	7:  8  11
+	8:  1  11 7  4
+	9:  
+	10: 5  3
+	11: 8  7  1
+3.  Implemented in graph.AdjacancyListGraph
+4.  Implemented in graph.Graph and graph.AdjacancyListGraph
+5.  Implemented in graph.Graph and graph.AdjacancyListGraph
+6.  Not Done
+7.  Not Done
+8.  Not Done
+9.  Not Done
+10. Not Done
+11. Not Done
+12. Not Done
+13. Not Done
+14. Not Done
+15. Not Done
+16. Not Done
+17. Not Done
+18. Not Done
+19. Not Done
+20. Not Done
+21. Not Done
+22. Not Done
+23. Not Done
+24. Not Done
+25. Not Done
+26. Not Done
+27. Not Done
+28. Not Done
+29. Not Done
+30. Not Done
+31. Not Done
+32. Not Done
+33. Not Done
+34. Not Done
+35. Not Done
+36. Not Done
+37. Not Done
+38. Not Done
+39. Not Done
+40. Not Done
+41. Not Done
+42. Not Done
+43. Not Done
+44. Not Done
+45. Not Done
+46. Not Done
+47. Not Done
+48. Not Done
+49. Not Done
+50. Not Done
