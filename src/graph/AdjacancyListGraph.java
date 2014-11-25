@@ -26,9 +26,7 @@ public class AdjacancyListGraph extends AbstractGraph {
 		for(int v= 0; v < V; v++) {
 			adj[v] = new LinkedListBag<Integer>();
 			for(int a : G.adj(v)) {
-				if(!adj[v].contains(a)) {
-					addEdge(v, a);
-				}
+				adj[v].add(a);
 			}
 		}
 	}
@@ -45,6 +43,12 @@ public class AdjacancyListGraph extends AbstractGraph {
 
 	@Override
 	public void addEdge(int v, int w) {
+		if(v == w) {
+			throw new IllegalArgumentException("Self-loop");
+		}
+		if(adj[v].contains(w)) {
+			throw new IllegalArgumentException("Parallel Edge");
+		}
 		adj[v].add(w);
 		adj[w].add(v);
 		E++;
