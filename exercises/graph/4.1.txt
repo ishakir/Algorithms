@@ -27,12 +27,59 @@
 	calls to addEdge)
 7.  Implemented in graph.client.FileGraphReader
 8.  Not Done - Partially implemented in graph.search.UnionFindSearch but tests not passing
-9.  Not Done
-10. Not Done
-11. Not Done
-12. Not Done
-13. Not Done
-14. Not Done
+9.  					marked  		edgeTo
+						
+	dfs(0) 				0				empty
+	| dfs(5)			0,5				5 -> 0
+	| | check 0
+	| | dfs(10) 		0,5,10			5 -> 0
+	| | | check 5						10 -> 5
+	| | |
+	| | | dfs(3)		0,5,10,3		5 -> 0
+	| | | | check 10					10 -> 5
+	| | | |								3 -> 10
+	| | | |
+	| | | |	dfs(6)		0,5,6,10,3  	5 -> 0
+	| | | |	|							10 -> 5
+	| | | |	|							3 -> 10
+	| | | |	|							6 -> 3
+	| | | | |
+	| | | | | dfs(2)	0,2,3,5,6,10	5 -> 0
+	| | | | | check 6   				10 -> 5
+	| | | | | check 0					3 -> 10
+	| | | | | check 3					6 -> 3
+	| | | | | 							2 -> 6
+	| | | | 6 done
+	| | | | check 2
+	| | | 3 done
+	| | 10 done
+	| | check 2
+	| 5 done
+	| check 2
+	| check 6
+	0 done
+	
+	Edge To tree:
+	
+	0 -> 5 -> 10 -> 3 -> 6 -> 2
+10. Consider a vertex which has all adjacent verticies marked, but is not marked
+	itself. This means that in a depth first search from another node all of the
+	nodes around it are reachable without traversing the node in question. This 
+	means that removing it will not cause the graph to become disconnected, as all
+	the other nodes were already reachable.
+	
+	It is obvious that such a node like this always exists in a connected graph, as
+	we can always choose the last node encountered in a depth first search.
+	
+	Implemented in graph.search.client.NonConnectedBreakingNode
+11.  /-5--10
+	0--2--3
+	 \-6
+12. If neither is the root the BFS tree gives us purely an upper bound on the distance
+	one vertex and another.
+13. Not Done - Time for query is dependant on graph size, but implementation exists in graph.search.BreadthFirstPaths
+14. No it does not, it computes depth first paths, as the element to come out of the stack
+	next is always the children of those that were most recently explored.
 15. Not Done
 16. Not Done
 17. Not Done

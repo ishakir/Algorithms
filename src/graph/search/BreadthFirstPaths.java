@@ -42,6 +42,14 @@ public class BreadthFirstPaths implements Paths {
 
 	@Override
 	public Iterable<Integer> pathTo(int v) {
+		return pathToStack(v);
+	}
+	
+	public int distTo(int v) {
+		return pathToStack(v).size();
+	}
+	
+	private Stack<Integer> pathToStack(int v) {
 		if(!hasPathTo(v)) return null;
 		Stack<Integer> path = new LinkedListStack<Integer>();
 		for(int x = v; x != s; x = edgeTo[x]) {
