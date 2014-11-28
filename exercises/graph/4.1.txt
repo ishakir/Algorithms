@@ -26,7 +26,7 @@
 	is only a cycle 3 -> 0 -> 1 -> 2 -> 3, and as such this cannot be formed by
 	calls to addEdge)
 7.  Implemented in graph.client.FileGraphReader
-8.  Not Done
+8.  Not Done - Partially implemented in graph.search.UnionFindSearch but tests not passing
 9.  Not Done
 10. Not Done
 11. Not Done

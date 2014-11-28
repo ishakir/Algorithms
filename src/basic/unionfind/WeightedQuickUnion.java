@@ -14,7 +14,9 @@ public class WeightedQuickUnion extends UnionFind {
 	
 	@Override
 	protected int find(int p) {
-		while(p != id[p]) p = id[p];
+		while(p != id[p]) {
+			p = id[p];
+		}
 		return p;
 	}
 
@@ -31,6 +33,7 @@ public class WeightedQuickUnion extends UnionFind {
 			id[j] = i;
 			sz[i] += sz[j];
 		}
+		count--;
 	}
 	
 	@Override

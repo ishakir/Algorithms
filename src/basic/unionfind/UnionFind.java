@@ -18,6 +18,9 @@ public abstract class UnionFind {
 	}
 	
 	public boolean connected(int p, int q) {
+		System.out.println(7);
+		System.out.println(find(q));
+		printState();
 		return find(p) == find(q);
 	}
 	
