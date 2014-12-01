@@ -28,6 +28,7 @@ public class SequentialSearchSymbolTable<Key, Value> extends
 				if(val == null) {
 					size--;
 				}
+				return;
 			}
 		}
 		first = new Node(key, val, first);

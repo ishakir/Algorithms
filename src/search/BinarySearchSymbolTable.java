@@ -76,6 +76,7 @@ public class BinarySearchSymbolTable<Key extends Comparable<Key>, Value>
 		int i = rank(key);
 		if(i < N && keys[i].compareTo(key) == 0) {
 			values[i] = val;
+			if(val == null) N--;
 			return;
 		}
 		for(int j = N; j > i; j--) {
