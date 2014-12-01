@@ -50,7 +50,7 @@
 32. Implemented in basic.steque.Steque and basic.steque.LinkedListSteque
 33. Not done - best way to do resizing - Implemented in basic.deque.Deque, basic.deque.DoublyLinkedListDeque and basic.deque.ResizingArrayDeque. Final one has a very interesting choice on how to implement resizing, not sure how good mine is
 34. Not done
-35. Not done - Best way to do resizing - Implemented in misc.Card and basic.queue.RandomQueue
+35. Implemented in misc.Card and basic.queue.RandomQueue
 36. Not done
 37. Not done
 38. Not done
