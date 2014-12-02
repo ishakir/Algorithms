@@ -1,6 +1,7 @@
-package sort.priorityqueue;
+package sort;
 
-import sort.Sort;
+import sort.priorityqueue.HeapMaxPriorityQueue;
+import sort.priorityqueue.MaxPriorityQueue;
 
 public class Heap<Item extends Comparable<Item>> extends Sort<Item> {
 	

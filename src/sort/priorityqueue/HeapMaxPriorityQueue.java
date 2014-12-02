@@ -14,7 +14,6 @@ public class HeapMaxPriorityQueue<Key extends Comparable<Key>> implements
 	public void insert(Key v) {
 		pq[++N] = v;
 		swim(N);
-		show();
 	}
 
 	@Override

@@ -1,0 +1,144 @@
+1.  R R P O T Y I I U Q E U
+2.  Once you have returned the maximum, you have no idea where your
+ 	next maximum is. This can only ever return the exact maximum value
+ 	of a collection, rather than give them all back in priority order.
+3.  Unordered Array - Implemented in sort.priorityqueue.UnorderedArrayPriorityQueue
+	Insert  - O(1)
+	Del Max - O(n)
+	Ordered Array - Implemented in sort.priorityqueue.OrderedArrayPriorityQueue
+	Insert  - O(n)
+	Del Max - O(1)
+	Unordered Linked List - Implemented in sort.priorityqueue.UnorderedLinkedListPriorityQueue
+	Insert  - O(1)
+	Del Max - O(n)
+	Ordered Linked List - Implemented in sort.priorityqueue.OrderedLinkedListPriorityQueue
+	Insert  - O(n)
+	Del Max - O(1)
+4.  Yes, each parent's children are always smaller than it
+5.  
+		 /-E
+	  /-U
+	 /	 \-N--E
+	Y	      
+	 \         /-O
+	  \	    /-Q
+	   \   /   \-I
+	    \-T
+		   \   /-S
+		    \-S
+		       \-A
+6.  (empty)
+
+	P
+	
+	R
+	 \-P
+	
+	 /-I
+	R
+	 \-P
+	
+	 /-I
+	R
+	 \-P
+	    \-O
+	    
+	 /-I
+	P
+	 \-O
+	
+	 /-I
+	R
+	 \-P
+	    \-O
+	    
+	 /-I
+	P
+	 \-O
+	 
+	O
+	 \-I
+	 
+	 /-I
+	O
+	 \-I
+	 
+	I
+	 \-I
+	
+	 /-I
+	T
+	 \-I
+	 
+	I
+	 \-I
+	 
+	 /-I
+	Y
+	 \-I
+	 
+	I
+	 \-I
+	
+	I
+	
+	(empty)
+	
+	Q
+	
+	U
+	 \-Q
+	
+	 /-E
+	U
+	 \-Q
+	
+	Q
+	 \-E
+	
+	E
+	
+	(empty)
+	
+	U
+	
+	(empty)
+	
+	E
+	
+7.  Not Done
+8.  Not Done
+9.  Not Done
+10. Not Done
+11. Not Done
+12. Not Done
+13. Not Done
+14. Not Done
+15. Not Done
+16. Not Done
+17. Not Done
+18. Not Done
+19. Not Done
+20. Not Done
+21. Not Done
+22. Not Done
+23. Not Done
+24. Not Done
+25. Not Done
+26. Not Done
+27. Not Done
+28. Not Done
+29. Not Done
+20. Not Done
+31. Not Done
+32. Not Done
+33. Not Done
+34. Not Done
+35. Not Done
+36. Not Done
+37. Not Done
+38. Not Done
+39. Not Done
+40. Not Done
+41. Not Done
+42. Not Done
