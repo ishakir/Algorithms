@@ -2,14 +2,14 @@ package search.symboltable.client;
 
 import misc.io.StdIn;
 import misc.io.StdOut;
-import search.symboltable.SequentialSearchSymbolTable;
 import search.symboltable.SymbolTable;
+import search.symboltable.ordered.BinarySearchSymbolTable;
 
 public class FrequencyCounter {
 
 	public static void main(String[] args) {
 		int minlen = 1;
-		SymbolTable<String, Integer> st = new SequentialSearchSymbolTable<String, Integer>();
+		SymbolTable<String, Integer> st = new BinarySearchSymbolTable<String, Integer>(10000);
 		
 		while(!StdIn.isEmpty()) {
 			String word = StdIn.readString();

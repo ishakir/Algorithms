@@ -1,13 +1,25 @@
-1. Implemented in search.symboltable.client.Grades
-2. Implemented in search.symboltable.UnorderedArraySymbolTable
-3. Implemented in search.symboltable.OrderedSequentialSearchSymbolTable
-4. Not Done
-5. Not Done
-6. Not Done
-7. Not Done
-8. Not Done
-9. Not Done
-10. Not Done
+1.  Implemented in search.symboltable.client.Grades
+2.  Implemented in search.symboltable.UnorderedArraySymbolTable
+3.  Implemented in search.symboltable.OrderedSequentialSearchSymbolTable
+4.  Not Done
+5.  Implemented in search.symboltable.SequentialSearchSymbolTable
+6.  Number of puts: W	(If you exclude the search for the highest)
+	Number of gets: D	(If you exclude the search for the highest)
+7.  Not Done
+8.  Not Done - Unable to download the file from the booksite
+9.  Not Done
+10. Insert E -	E						0
+	Insert A - 	A E						1
+	Insert S - 	S A E					2
+	Insert Y - 	Y S A E					3
+	Insert Q - 	Q Y S A E 				4
+	Insert U - 	U Q Y S A E				5
+	Insert E - 	U Q Y S A E				6
+	Insert S - 	S U Q Y S A E			6
+	Insert T - 	T S U Q Y S A E 		7
+	Insert I - 	I T S U Q Y S A E		8
+	Insert O -  O I T S U Q Y S A E 	9
+	Insert N - 	N O I T S U Q Y S A E	10
 11. Not Done
 12. Not Done
 13. Not Done
