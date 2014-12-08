@@ -1,6 +1,6 @@
-1. Implemented in search.client.Grades
-2. Implemented in search.UnorderedArraySymbolTable
-3. Not Done
+1. Implemented in search.symboltable.client.Grades
+2. Implemented in search.symboltable.UnorderedArraySymbolTable
+3. Implemented in search.symboltable.OrderedSequentialSearchSymbolTable
 4. Not Done
 5. Not Done
 6. Not Done

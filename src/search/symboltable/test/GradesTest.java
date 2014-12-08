@@ -1,10 +1,10 @@
-package search.test;
+package search.symboltable.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import search.client.Grades;
+import search.symboltable.client.Grades;
 
 public class GradesTest {
 	

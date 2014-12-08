@@ -1,9 +1,9 @@
-package search.client;
+package search.symboltable.client;
 
 import misc.io.StdIn;
 import misc.io.StdOut;
-import search.SequentialSearchSymbolTable;
-import search.SymbolTable;
+import search.symboltable.SequentialSearchSymbolTable;
+import search.symboltable.SymbolTable;
 
 public class FrequencyCounter {
 

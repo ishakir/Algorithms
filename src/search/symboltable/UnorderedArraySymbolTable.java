@@ -1,4 +1,4 @@
-package search;
+package search.symboltable;
 
 import java.util.Iterator;
 

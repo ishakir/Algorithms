@@ -1,4 +1,4 @@
-package search;
+package search.symboltable;
 
 public abstract class AbstractSymbolTable<Key, Value> implements SymbolTable<Key, Value> {
 	

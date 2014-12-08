@@ -1,4 +1,4 @@
-package search;
+package search.symboltable.ordered;
 
 import basic.queue.LinkedListQueue;
 import basic.queue.Queue;

@@ -1,6 +1,6 @@
-package search.test;
+package search.symboltable.test;
 
-import search.SequentialSearchSymbolTable;
+import search.symboltable.SequentialSearchSymbolTable;
 
 public class SequentialSearchSymbolTableTest extends SymbolTableTestBase<SequentialSearchSymbolTable<String,Integer>>{
 

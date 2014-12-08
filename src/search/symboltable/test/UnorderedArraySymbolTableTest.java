@@ -1,6 +1,6 @@
-package search.test;
+package search.symboltable.test;
 
-import search.UnorderedArraySymbolTable;
+import search.symboltable.UnorderedArraySymbolTable;
 
 public class UnorderedArraySymbolTableTest extends SymbolTableTestBase<UnorderedArraySymbolTable<String,Integer>> {
 

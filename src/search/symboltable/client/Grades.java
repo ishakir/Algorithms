@@ -1,7 +1,7 @@
-package search.client;
+package search.symboltable.client;
 
-import search.BinarySearchSymbolTable;
-import search.SymbolTable;
+import search.symboltable.SymbolTable;
+import search.symboltable.ordered.BinarySearchSymbolTable;
 
 public class Grades {
 	

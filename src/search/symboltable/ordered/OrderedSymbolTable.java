@@ -1,4 +1,6 @@
-package search;
+package search.symboltable.ordered;
+
+import search.symboltable.SymbolTable;
 
 public interface OrderedSymbolTable<Key extends Comparable<Key>, Value> extends SymbolTable<Key, Value> {
 	

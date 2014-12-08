@@ -1,10 +1,10 @@
-package search.test;
+package search.symboltable.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import search.SymbolTable;
+import search.symboltable.SymbolTable;
 
 public abstract class SymbolTableTestBase<T extends SymbolTable<String, Integer>> {
 

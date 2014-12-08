@@ -1,4 +1,4 @@
-package search;
+package search.symboltable;
 
 public interface SymbolTable<Key,Value> {
 	

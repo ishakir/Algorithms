@@ -1,4 +1,6 @@
-package search;
+package search.symboltable.ordered;
+
+import search.symboltable.AbstractSymbolTable;
 
 public abstract class AbstractOrderedSymbolTable<Key extends Comparable<Key>, Value>
 		extends AbstractSymbolTable<Key, Value> implements
