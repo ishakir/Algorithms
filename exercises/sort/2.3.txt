@@ -47,8 +47,23 @@
 	sort		11	11
 								A E E I N O Q S S T U Y
 	
-3. Not Done
-4. Not Done
+3. 	Take the size of the list to be N, the largest element can move at most N/2 times. Essentially it needs
+	to be in a situation where it is moved just to the right of the pivot each time and the pivot moves only
+	one place each iteration up the list.
+
+4. 	Not Done (two are completed below)
+
+	[0,1,2,3,4,5,6,7,8,9]  (partition always returns the lowest element)
+   	[9,8,7,6,5,4,3,2,1,0]  (partition always returns the highest element)
+   	[]
+   	[]
+   	[]
+   	[]
+   	
+   	Trail of thought is that any array which is construced by choosing a number x between 0 and 10, 
+   	filling the first x elements of the array with the numbers 0 - (x - 1) and then the rest of the
+   	array with the rest in reverse order (the two above are special cases where x = 10 and x = 0).
+   	not proven, though
 5. Not Done
 6. Not Done
 7. Not Done
