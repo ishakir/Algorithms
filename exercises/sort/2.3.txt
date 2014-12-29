@@ -1,0 +1,78 @@
+1. 						i 	j
+	initial values		0	12	E A S Y Q U E S T I O N
+	scan left, right	2	1	E A S Y Q U E S T I O N
+	final exchange			1	A E S Y Q U E S T I O N
+
+2. 				lo	hi	i 	j 	
+	sort		0	11			E A S Y Q U E S T I O N
+	partition			0	11
+						2	1	A E S Y Q U E S T I O N
+	sort 		0 	0			
+	sort		2	11
+	partition			2	11	
+						4	10	A E S N Q U E S T I O Y
+						6	9	A E S N Q O E S T I U Y
+							8	A E S N Q O E S S T U Y
+								A E I N Q O E S S T U Y
+	sort		2	7
+	partition			2	7	
+						3	6	A E I E O Q N S S T U Y
+							3	A E E I Q O N S S T U Y
+	sort		2	2
+	sort 		4	7
+	partition			4	7
+							6	A E E I N O Q S S T U Y
+	sort		4	5
+	partition			4	5
+							4
+	sort 		4	3
+	sort        5	5
+	sort		5	7
+	partition			5	7
+							5
+	sort 		5	4
+	sort		6	7
+	partition			6	7
+							6
+	sort 		6	5
+	sort		7	7
+	sort 		9	11
+	partition			9	11
+							9
+	sort		9	8
+	sort		10	11
+	partition			10	11
+							10
+	sort		10	9
+	sort		11	11
+								A E E I N O Q S S T U Y
+	
+3. Not Done
+4. Not Done
+5. Not Done
+6. Not Done
+7. Not Done
+8. Not Done
+9. Not Done
+10. Not Done
+11. Not Done
+12. Not Done
+13. Not Done
+14. Not Done
+15. Not Done
+16. Not Done
+17. Not Done
+18. Not Done
+19. Not Done
+20. Not Done
+21. Not Done
+22. Not Done
+23. Not Done
+24. Not Done
+25. Not Done
+26. Not Done
+27. Not Done
+28. Not Done
+29. Not Done
+30. Not Done
+31. Not Done
