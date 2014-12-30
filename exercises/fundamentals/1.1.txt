@@ -1,0 +1,69 @@
+1.  
+	a.	7
+	b.	200.0000002
+	c.	true
+	
+2.  
+	a.	float, 1.618
+	b.	float, 10.0
+	c.	boolean, true
+	d.	string, "33"
+	
+3.  Implemented in basic.misc.AllEqual
+4.  
+	a. Syntactically incorrect in Java, which has no then statement
+	b. Syntactically incorrect in Java, condition is not in brackets
+	c. Syntactically correct in Java	
+	d. Syntactically incorrect in Java, c = 0 statement is not terminated with a semicolon
+	
+5.  Implemented in basic.misc.BetweenZeroAndOne
+6.  0
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	1
+	
+7.  Not Done
+8.  Not Done
+9.  Not Done
+10. Not Done
+11. Not Done
+12. Not Done
+13. Not Done
+14. Not Done
+15. Not Done
+16. Not Done
+17. Not Done
+18. Not Done
+19. Not Done
+20. Not Done
+21. Not Done
+22. Not Done
+23. Not Done
+24. Not Done
+25. Not Done
+26. Not Done
+27. Not Done
+28. Not Done
+29. Not Done
+30. Not Done
+31. Not Done
+32. Not Done
+33. Not Done
+34. Not Done
+35. Not Done
+36. Not Done
+37. Not Done
+38. Not Done
+39. Not Done
