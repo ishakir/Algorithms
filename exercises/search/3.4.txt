@@ -12,7 +12,9 @@
 	Found a solution with M=20, and a=1. had to take a guess at where to stop searching up through the values of a.
 	It's intuitive that there's somewhere to stop. Guess is that it's at M which leads to the solution given
 	but have not proven this
-5.  Not Done
+5.  It is legal, yes, in the sense that java will permit you to run it. The problem is that all objects of
+	this type will collide when hashed, which will lead to large chains in separate chaining or linear probing
+	collision resolution. Put / Get operations will be O(n), getting rid of all the advantages of hashing.
 6.  Not Done
 7.  Not Done
 8.  Not Done
