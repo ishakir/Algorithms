@@ -54,5 +54,12 @@ public abstract class SetTestBase<T extends Set<String>> {
 		st.add("hello");
 		assertFalse(st.contains("goodbye"));
 	}
+	
+	@Test
+	public void addingsameElementTwiceLeavesSetTheSame() {
+		Set<String> st = initialize();
+		st.add("hello");
+		assertEquals(1, st.size());
+	}
 
 }
